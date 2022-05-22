@@ -1,0 +1,74 @@
+#dropDownSlide {
+  width: 23%;
+  position: fixed;
+  display: block;
+  right: -30%;
+  height: 100vh;
+  top: 66px;
+  background: black;
+  border-radius: 8px;
+  border-color: #0f0617;
+  transform: translateX(0);
+  transition: ease all 0.1s;
+  z-index: 1;
+}
+#dropDownSlide nav {
+  padding: 20px 25px;
+}
+#dropDownSlide nav h4 {
+  display: block;
+  margin: 6px 0;
+  padding: 15px 13px;
+  /* background: hsla(1, 0%, 100%, 0.06); */
+  border-color: #0f0617;
+  color: hsla(0, 0%, 100%, 0.5);
+  text-decoration: none;
+  border-top: 2px solid hsla(0, 0%, 100%, 0.1);
+  text-transform: capitalize;
+}
+
+#dropDownSlide nav:first-child h4 {
+  border-top: none;
+}
+.activeClass {
+  transform: translate(500px);
+  transition: ease all 0.06s;
+  right: 0 !important;
+}
+
+/*grid css */
+.gridSection {
+  position: absolute;
+  top: 60px;
+  right: 700px;
+  background: #0f0617;
+  color: #111;
+  width: 12%;
+  height: 500px;
+  border: 1px solid #252121;
+  border-radius: 6px;
+  text-align: left;
+  z-index: 1;
+}
+.gridSection aside {
+  margin: 25px auto;
+  width: 60%;
+  height: 460px;
+}
+.gridDropDown ul {
+  flex-direction: column;
+  list-style: none;
+}
+.gridDropDown ul li a {
+  cursor: pointer;
+  color: #cfc3ca;
+  font-size: 14px;
+  text-decoration: none;
+}
+.gridDropDown ul li a:hover {
+  border-bottom: none;
+  padding-bottom: none;
+}
+.gridDropDown ul li {
+  padding-bottom: 32px;
+}
